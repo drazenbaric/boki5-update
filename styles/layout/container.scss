@@ -1,0 +1,21 @@
+.container {
+  max-width: 1160px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.section__container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    @include clearfix;
+    overflow: auto;
+}
+
+@media #{$media-1055} {
+    .section__container {
+        width: 90%;
+    }
+}

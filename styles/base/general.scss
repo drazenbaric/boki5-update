@@ -1,0 +1,42 @@
+$media-445: "screen and (min-width: 445px)";
+$media-544: "screen and (min-width: 544px)";
+$media-992: "screen and (min-width: 992px)";
+$media-1055: "screen and (min-width: 1055px)";
+$media-1200: "screen and (min-width: 1200px)";
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+@mixin background {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin section {
+    width: 100%;
+    position: relative;
+}
+
+::selection {
+    background: #FFCB46;
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
